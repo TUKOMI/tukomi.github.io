@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo</title>
+	<script type="text/javascript" src="js/skrollr.stylesheets.js"></script>
+	<script type="text/javascript" src="js/skrollr.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/style.css" data-skrollr-stylesheet />
+</head>
+<body>
+	<div id="header">
+		<div class="logo-cell">
+			<span class="logo skrollable rendered" data-0="top:42px" data-600="top:62px" style="top: 42px;">
+				<img data-0="transform[bounce]:rotate(0deg);" data-3000="transform[bounce]:rotate(36000deg)" src="img/vint.svg">
+			</span>
+		</div>
+		<div class="tringle-bar" data--10="top:-190px;" data-350="top:-150px;" style="top:-190px;">
+			<img src="img/tringle-top.png">
+		</div>
+		<div class="plane" data-100="top: -80px; transform[bounce]: rotate(0deg) scale(0.4); opacity:1;" data-500="top: 900px; transform[bounce]: rotate(0deg) scale(1.5);opacity:1;" data-10000="top: 1220px; transform[bounce]: rotate(0deg) scale(0.9);opacity:1;">
+			<img src="img/air-top.svg">
+			<span class="airscrew"></span>
+		</div>
+		<div class="tringle-back">
+			<img src="img/tringle-top.svg">
+		</div>
+		<div class="self-box" data-0="top: 0px;" data-400="top: -60px;">
+			<div class="self-cnt">
+				<div class="photo-box">
+					<img class="photo" src="img/logo-self.png">
+				</div>
+			</div>
+			<div class="road-line" data-140="top: 0px;" data-1500="top: -3000px"></div>
+			<img class="self-bottom"  src="img/tringle-large-top.png">
+		</div>
+	</div>
+	<script>
+		var s = skrollr.init();
+	</script>
+</body>
+</html>
