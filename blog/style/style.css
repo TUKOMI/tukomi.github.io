@@ -49,6 +49,7 @@ img.bottom{
 }
 
 @-webkit-keyframes vh{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+@keyframes vh{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
 .logo img {
 	width: 80px;
     height: 80px;
@@ -56,6 +57,7 @@ img.bottom{
     left: 78px;
     position: absolute;
     -webkit-animation: vh 0.1s steps(6) infinite;
+    animation: vh 0.1s steps(6) infinite;
 }
 .tringle-bar {
 	width: 100%;
