@@ -49,6 +49,7 @@ img.bottom{
 }
 
 @-webkit-keyframes vh{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+@-moz-keyframes vh{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
 @keyframes vh{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
 .logo img {
 	width: 80px;
@@ -57,6 +58,7 @@ img.bottom{
     left: 78px;
     position: absolute;
     -webkit-animation: vh 0.1s steps(6) infinite;
+    -moz-animation: vh 0.1s steps(6) infinite;
     animation: vh 0.1s steps(6) infinite;
 }
 .tringle-bar {
@@ -100,14 +102,15 @@ img.bottom{
 	z-index: 950;
 }
 
-@-webkit-keyframes rot{0%{background-position:center 0}100%{background-position:center -600px}}
-@keyframes rot{0%{background-position:center 0}100%{background-position:center -600px}}
 .plane img {
 	display: block;
 	width: 100%;
 	height: auto!important;
 }
 
+@-webkit-keyframes rot{0%{background-position:center 0}100%{background-position:center -600px}}
+@-moz-keyframes rot{0%{background-position:center 0}100%{background-position:center -600px}}
+@keyframes rot{0%{background-position:center 0}100%{background-position:center -600px}}
 .airscrew {
 	display: block;
 	width: 230px;
@@ -117,6 +120,8 @@ img.bottom{
     top: 125px;
 	background: url(../img/vint-horisontal.png) center top no-repeat;
 	-webkit-animation: rot 0.1s steps(20) infinite;
+	-moz-animation: rot 0.1s steps(20) infinite;
+	animation: rot 0.1s steps(20) infinite;
 }
 
 .self-box {
