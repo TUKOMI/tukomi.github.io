@@ -11,8 +11,8 @@
 <body>
 	<div id="header">
 		<div class="logo-cell">
-			<span class="logo skrollable rendered" data-0="top:42px" data-600="top:62px" style="top: 42px;">
-				<img src="img/vint.svg">
+			<span class="logo skrollable rendered" data--10="top:30px" data-600="top:52px">
+				<img src="img/airscrew.png">
 			</span>
 		</div>
 		<div class="tringle-bar" data--10="top:-190px;" data-350="top:-150px;" style="top:-190px;">
@@ -25,8 +25,8 @@
 		<div class="tringle-back">
 			<img src="img/tringle-top.svg">
 		</div>
-		<div class="self-box" data-0="top: 0px;" data-400="top: -60px;">
-			<div class="self-cnt"  data-0="top: 300px;" data-400="top: 380px" data-1300="top: 380px;" data-3000="top: 1200px">
+		<div class="self-box" data-0="top: 0px; " data-400="top: -60px;">
+			<div class="self-cnt"  data-0="top: 300px; opacity: 1;"  data-400="top: 400px; opacity: 0.6;" data-1200="top: 420px; opacity: 0;">
 				<div class="cnt-bg"></div>
 				<div class="photo-box">
 					<img class="photo" src="img/logo-self.png">
@@ -40,14 +40,15 @@
 				</div>
 			</div>
 			<div class="road-box">
-				<div class="road-line" data-140="top: 0px;" data-1500="top: -3000px"></div>
+				<div class="road-line" data-140="top: 0px;" data-1500="top: -3000px;"></div>
 			</div>
-			<img class="self-bottom"  src="img/tringle-large-top.png">
+			<img class="bottom"  src="img/tringle-large-top.png">
 		</div>
-		<div class="about-me">
-
+		<div class="about-me" data-0="top: -800px;" data-2000="top: -50px;">
+			<img src="img/about-me-bottom.png" alt="" class="bottom">
 		</div>
 	</div>
+
 	<script>
 	var scrollObj = skrollr.init({
 		  //跟smoothScrolling的功能，主要都是讓scroll事件不要這麼敏感，動畫才不會看起來卡卡的。
