@@ -5,16 +5,20 @@
 	<title>test</title>
 </head>
 <body>
+	<h1 id="title"></h1>
 	<p>This page is a test page.</p>
 	<div id="myDiv">
-
 	</div>
 	<div id="output">
-
 	</div>
 	<div id="arrow" style="width: 200px; height: 100px; background: red; ">
-
 	</div>
+	<ul id="nav">
+		<li id="home">HOME</li>
+		<li id="projects">PROJECTS</li>
+		<li id="store">STORE</li>
+		<li id="about">ABOUT</li>
+	</ul>
 
 	<script type="text/javascript">
 		var EventUtil = {
@@ -22,6 +26,14 @@
 				if (element.addEventListener){
 					element.addEventListener(type, handler, false);
 				};
+			},
+
+			getEvent: function(event){
+				return event ? event : window.event;
+			},
+
+			getTarget: function(event){
+				return event.target || event.srcElement;
 			}
 		};
 
@@ -40,6 +52,32 @@
 			var arrow = document.getElementById("arrow");
 			arrow.style.webkitTransform = "rotate(" + Math.round(event.alpha) + "deg)";
 		});
+
+		var nav = document.getElementById("nav");
+		EventUtil.addHandler(nav, "click", function(event){
+			event = EventUtil.getEvent(event);
+			var target = EventUtil.getTarget(event);
+			var title = document.getElementById("title");
+
+			switch(target.id){
+				case "home"
+					title.innerHTML = "This is Home page";
+					break;
+
+				case "projects"
+					title.innerHTML = "This is Projects page";
+					break;
+
+				case "store"
+					title.innerHTML = "This is Store page";
+					break;
+
+				case "about"
+					title.innerHTML = "This is About page";
+					break;
+			};
+		});
+
 	</script>
 </bod>
 </html>
