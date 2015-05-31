@@ -5,7 +5,7 @@
 	<title>test</title>
 </head>
 <body>
-	<h1 id="title"></h1>
+	<h1 id="title-h"></h1>
 	<p>This page is a test page.</p>
 	<div id="myDiv">
 	</div>
@@ -57,23 +57,23 @@
 		EventUtil.addHandler(nav, "click", function(event){
 			event = EventUtil.getEvent(event);
 			var target = EventUtil.getTarget(event);
-			var title = document.getElementById("title");
+			var title_h = document.getElementById("title-h");
 
 			switch(target.id){
 				case "home"
-					title.innerHTML = "This is Home page";
+					title_h.innerHTML = "This is Home page";
 					break;
 
 				case "projects"
-					title.innerHTML = "This is Projects page";
+					title_h.innerHTML = "This is Projects page";
 					break;
 
 				case "store"
-					title.innerHTML = "This is Store page";
+					title_h.innerHTML = "This is Store page";
 					break;
 
 				case "about"
-					title.innerHTML = "This is About page";
+					title_h.innerHTML = "This is About page";
 					break;
 			};
 		});
