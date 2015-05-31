@@ -38,7 +38,7 @@
 			var output = document.getElementById("output");
 			output.innerHTML = "Alpha=" + event.alpha + " , Beta=" + event.beta + " , Gamma=" + event.gamma;
 			var arrow = document.getElementById("arrow");
-			arrow.style.transform = "rotate(" + Math.round(event.alpha) + "deg)";
+			arrow.style.webkitTransform = "rotate(" + Math.round(event.alpha) + "deg)";
 		});
 	</script>
 </bod>
