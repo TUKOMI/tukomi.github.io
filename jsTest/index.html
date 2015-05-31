@@ -34,8 +34,8 @@
 			});
 		});
 
-		EventUtil.addHandler(window, "deviceorientatio", function(event){
-			var ouput = document.getElementById("output");
+		EventUtil.addHandler(window, "deviceorientation", function(event){
+			var output = document.getElementById("output");
 			output.innerHTML = "Alpha=" + event.alpha + " , Beta=" + event.beta + " , Gamma=" + event.gamma;
 		});
 	</script>
