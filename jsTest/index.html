@@ -9,6 +9,13 @@
 	<div id="myDiv">
 
 	</div>
+	<div id="output">
+
+	</div>
+	<div id="arrow">
+
+	</div>
+
 	<script type="text/javascript">
 		var EventUtil = {
 			addHandler: function(element, type, handler){
@@ -16,7 +23,7 @@
 					element.addEventListener(type, handler, false);
 				};
 			}
-		}
+		};
 
 		EventUtil.addHandler(window, 'load', function(event){
 			var div = document.getElementById("myDiv");
@@ -24,8 +31,13 @@
 
 			EventUtil.addHandler(window, 'orientationchange', function(event){
 				div.innerHTML = "Current orientation is " + window.orientation;
-			})
-		})
+			});
+		});
+
+		EventUtil.addHandler(window, "deviceorientatio", function(event){
+			var ouput = document.getElementById("output");
+			output.innerHTML = "Alpha=" + event.alpha + " , Beta=" + event.beta + " , Gamma=" + event.gamma;
+		});
 	</script>
 </bod>
 </html>
