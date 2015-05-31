@@ -9,6 +9,7 @@ a {
 	text-decoration: none;
 	color: #000;
 }
+
 .strang {
 	color: #D71922;
 	font-weight: bold;
@@ -51,6 +52,7 @@ img.bottom{
 @-webkit-keyframes vh{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
 @-moz-keyframes vh{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
 @keyframes vh{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+
 .logo img {
 	width: 80px;
     height: 80px;
@@ -61,6 +63,7 @@ img.bottom{
     -moz-animation: vh 0.1s steps(6) infinite;
     animation: vh 0.1s steps(6) infinite;
 }
+
 .tringle-bar {
 	width: 100%;
 	height: 200px;
@@ -69,6 +72,7 @@ img.bottom{
 	top: -190px;
 	z-index: 1100;
 }
+
 .tringle-bar img {
 	width: 100%;
 	height: auto;
@@ -111,11 +115,12 @@ img.bottom{
 @-webkit-keyframes rot{0%{background-position:center 0}100%{background-position:center -600px}}
 @-moz-keyframes rot{0%{background-position:center 0}100%{background-position:center -600px}}
 @keyframes rot{0%{background-position:center 0}100%{background-position:center -600px}}
+
 .airscrew {
 	display: block;
 	width: 230px;
 	height: 30px;
-	position: absolute;  
+	position: absolute;
 	left: -21px;
     top: 125px;
 	background: url(../img/vint-horisontal.png) center top no-repeat;
@@ -142,6 +147,7 @@ img.bottom{
 	z-index: 90;
 	margin-left: -133px;
 }
+
 .self-box .road-line{
 	background: url(../img/road-line.png) left top repeat-y;
 	width: 266px;
@@ -160,6 +166,7 @@ img.bottom{
 	left: -390px;
 	z-index: 100;
 }
+
 .self-box .cnt-bg {
 	width: 600px;
 	height: 600px;
