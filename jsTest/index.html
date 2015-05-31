@@ -6,5 +6,26 @@
 </head>
 <body>
 	<p>This page is a test page.</p>
+	<div id="myDiv">
+
+	</div>
+	<script type="text/javascript">
+		var EventUtil = {
+			addHandler: function(element, type, handler){
+				if (element.addEventListener){
+					element.addEventListener(type, handler, false);
+				};
+			}
+		}
+
+		EventUtil.addHandler(window, 'load', function(event){
+			var div = document.getElementById("myDiv");
+			div.innerHTML = "Current orientation is " + window.orientation;
+
+			EventUtil.addHandler(window, 'orientationchange', function(event){
+				div.innerHTML = "Current orientation is " + window.orientation;
+			})
+		})
+	</script>
 </bod>
 </html>
