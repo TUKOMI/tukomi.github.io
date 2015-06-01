@@ -2,36 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>test</title>
+	<title>DEMO</title>
 </head>
 <body>
-
-	<p>This page is a test page.</p>
-
-	<p>=================iOS EVENT===================</p>
-	<div id="myDiv">
-	</div>
-	<div id="output">
-	</div>
-	<div id="arrow" style="width: 200px; height: 100px; background: red; ">
-	</div>
-
-	<p>=================EVENT DELEGATION===================</p>
-	<h1 id="title-h">WELCOME!!</h1>
-	<ul id="nav">
-		<li id="home">HOME</li>
-		<li id="projects">PROJECTS</li>
-		<li id="store">STORE</li>
-		<li id="about">ABOUT</li>
-	</ul>
-
 	<p>=================FORM SET===================</p>
 	<form name="form1" id="form1" method="post" >
 		<input type="text" name="anything" placeholder="input" >
 		<button type="reset">Reset</button>
 		<input type="submit" name="submit" value="submit">
 	</form>
-
 	<script type="text/javascript">
 		var EventUtil = {
 			addHandler: function(element, type, handler){
@@ -78,47 +57,6 @@
 			}
 		};
 
-		EventUtil.addHandler(window, 'load', function(event){
-			var div = document.getElementById("myDiv");
-			div.innerHTML = "Current orientation is " + window.orientation;
-
-			EventUtil.addHandler(window, 'orientationchange', function(event){
-				div.innerHTML = "Current orientation is " + window.orientation;
-			});
-		});
-
-		EventUtil.addHandler(window, "deviceorientation", function(event){
-			var output = document.getElementById("output");
-			output.innerHTML = "Alpha=" + event.alpha + " , Beta=" + event.beta + " , Gamma=" + event.gamma;
-			var arrow = document.getElementById("arrow");
-			arrow.style.webkitTransform = "rotate(" + Math.round(event.alpha) + "deg)";
-		});
-
-		var nav = document.getElementById("nav");
-		EventUtil.addHandler(nav, "click", function(event){
-			event = EventUtil.getEvent(event);
-			var target = EventUtil.getTarget(event);
-			var title_h = document.getElementById("title-h");
-
-			switch(target.id){
-				case "home":
-					title_h.innerHTML = "This is Home page";
-					break;
-
-				case "projects":
-					title_h.innerHTML = "This is Projects page";
-					break;
-
-				case "store":
-					title_h.innerHTML = "This is Store page";
-					break;
-
-				case "about":
-					title_h.innerHTML = "This is About page";
-					break;
-			};
-		});
-
 		var form = document.getElementById("form1");
 		EventUtil.addHandler(form, "reset", function(event){
 			var event = EventUtil.getEvent(event);
@@ -151,6 +89,7 @@
 			}
 		});
 
+
 	</script>
-</bod>
+</body>
 </html>
