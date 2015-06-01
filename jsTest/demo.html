@@ -8,7 +8,6 @@
 	<p>=================FORM SET===================</p>
 	<form name="form1" id="form1" method="post" >
 		<input type="text" name="anything" placeholder="input" >
-		<button type="reset">Reset</button>
 		<input type="submit" name="submit" value="submit">
 	</form>
 	<script type="text/javascript">
@@ -46,27 +45,10 @@
 			getClipboardText: function(event){
 				var clipboardData = (event.clipboardData || window.clipboardData);
 				return clipboardData.getData("text");
-			},
-
-			setClipboardText: function(event, value){
-				if (event.clipboardData) {
-					return event.clipboardData.setData("text/plain", value);
-				} else if (window.clipboardData) {
-					return window.clipboardData.setData("text", value);
-				}
 			}
 		};
 
 		var form = document.getElementById("form1");
-		EventUtil.addHandler(form, "reset", function(event){
-			var event = EventUtil.getEvent(event);
-			var is_sure = confirm("Are you sure reset form?");
-
-			if (is_sure == false) {
-				event.preventDefault(event);
-			};
-		});
-
 		var textBox = form.elements["anything"];
 		EventUtil.addHandler(textBox, "keypress", function(event){
 			event = EventUtil.getEvent(event);
