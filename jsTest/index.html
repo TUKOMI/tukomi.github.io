@@ -5,14 +5,19 @@
 	<title>test</title>
 </head>
 <body>
-	<h1 id="title-h"></h1>
+
 	<p>This page is a test page.</p>
+
+	<p>=================iOS EVENT===================</p>
 	<div id="myDiv">
 	</div>
 	<div id="output">
 	</div>
 	<div id="arrow" style="width: 200px; height: 100px; background: red; ">
 	</div>
+
+	<p>=================EVENT DELEGATION===================</p>
+	<h1 id="title-h">WELCOME!!</h1>
 	<ul id="nav">
 		<li id="home">HOME</li>
 		<li id="projects">PROJECTS</li>
@@ -20,12 +25,26 @@
 		<li id="about">ABOUT</li>
 	</ul>
 
+	<p>=================FORM SET===================</p>
+	<form name="form1" id="form1" method="post" >
+		<input type="text" name="text" placeholder="input" >
+		<button type="reset">Reset</button>
+		<input type="submit" name="submit" value="submit">
+	</form>
 	<script type="text/javascript">
 		var EventUtil = {
 			addHandler: function(element, type, handler){
 				if (element.addEventListener){
 					element.addEventListener(type, handler, false);
 				};
+			},
+
+			preventDefault: function(event){
+				if (event.preventDefault){
+					event.preventDefault();
+				} else {
+					event.returnValue = false;
+				}
 			},
 
 			getEvent: function(event){
@@ -78,6 +97,14 @@
 			};
 		});
 
+		var form = document.getElementById("form1");
+		EventUtil.addHandler(form, "reset", function(event){
+			var event = EventUtil.getEvent(event);
+			var is_sure = confirm("Are you sure reset form?");
+			if (is_sure == false) {
+				event.preventDefault(event);
+			};
+		});
 	</script>
 </bod>
 </html>
