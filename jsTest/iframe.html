@@ -9,8 +9,10 @@
 	<iframe id="myframe" src="http://tukomi.github.io/jsTest/index.html"></iframe>
 
 	<script type="text/javascript">
-	var iframeWindow = document.getElementById("myframe").contentWindow;
-	iframeWindow.postMessage("a secret", "*");
+
+		var iframeWindow = document.getElementById("myframe").contentWindow;
+		iframeWindow.postMessage("a secret", "http://tukomi.github.io");
+
 	</script>
 </body>
 </html>
