@@ -202,7 +202,7 @@
 		})();
 
 		EventUtil.addHandler(window, "message", function(event){
-			if (event,origin == "http://tukomi.github.io") {
+			if (event.origin == "http://tukomi.github.io") {
 				processMessage(event.data);
 
 				event.source.postMessage("Received", "http://tukomi.github.io/jsTest/iframe.html");
