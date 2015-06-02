@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DEMO</title>
+
+</head>
+<body>
+	<iframe id="myframe" src="http://tukomi.github.io/jsTest/index.html"></iframe>
+
+	<script type="text/javascript">
+	var iframeWindow = document.getElementById("myframe").contentWindow;
+	iframeWindow.postMessage("a secret", "*");
+	</script>
+</body>
+</html>

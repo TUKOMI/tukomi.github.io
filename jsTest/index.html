@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>test</title>
 </head>
-<body>
+<body style="height:3000px;">
 
 	<p>This page is a test page.</p>
 
@@ -30,6 +30,26 @@
 		<input type="text" name="anything" placeholder="input" >
 		<button type="reset">Reset</button>
 		<input type="submit" name="submit" value="submit">
+	</form>
+
+	<br><br>
+	<form name="form2" id="form2" method="post">
+		<label>Input your IP address
+			<input type="text" name="ip1" id="ip1" maxlength="3" size="3">.
+			<input type="text" name="ip2" id="ip2" maxlength="3" size="3">.
+			<input type="text" name="ip3" id="ip3" maxlength="3" size="3">.
+			<input type="text" name="ip4" id="ip4" maxlength="3" size="3">
+		</label>
+	</form>
+
+	<br><br>
+	<form name="form3" id="form3" method="post">
+		<select name="words" id="words">
+			<option value="aa">aa</option>
+			<option value="bb">bb</option>
+			<option value="cc">cc</option>
+			<option value="dd">dd</option>
+		</select>
 	</form>
 
 	<script type="text/javascript">
@@ -119,8 +139,8 @@
 			};
 		});
 
-		var form = document.getElementById("form1");
-		EventUtil.addHandler(form, "reset", function(event){
+		var form1 = document.getElementById("form1");
+		EventUtil.addHandler(form1, "reset", function(event){
 			var event = EventUtil.getEvent(event);
 			var is_sure = confirm("Are you sure reset form?");
 
@@ -129,7 +149,7 @@
 			};
 		});
 
-		var textBox = form.elements["anything"];
+		var textBox = form1.elements["anything"];
 		EventUtil.addHandler(textBox, "keypress", function(event){
 			event = EventUtil.getEvent(event);
 			var target = EventUtil.getTarget(event);
@@ -150,6 +170,36 @@
 				alert("You need input number!");
 			}
 		});
+
+		(function(){
+			function tabForward(event){
+				event = EventUtil.getEvent(event);
+				var target = EventUtil.getTarget(event);
+
+				if (target.value.length == target.maxLength){
+					var form2 = target.form;
+
+					for (var i=0, len = form2.elements.length; i<len; i++) {
+						if (form2.elements[i] == target) {
+							if (form2.elements[i+1]) {
+								form2.elements[i+1].focus();
+							}
+							return;
+						}
+					}
+				}
+			}
+
+			var textbox1 = document.getElementById("ip1");
+			var textbox2 = document.getElementById("ip2");
+			var textbox3 = document.getElementById("ip3");
+			var textbox4 = document.getElementById("ip4");
+
+			EventUtil.addHandler(textbox1, "keyup", tabForward);
+			EventUtil.addHandler(textbox2, "keyup", tabForward);
+			EventUtil.addHandler(textbox3, "keyup", tabForward);
+			EventUtil.addHandler(textbox4, "keyup", tabForward);
+		})();
 
 	</script>
 </bod>
