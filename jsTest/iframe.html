@@ -7,12 +7,13 @@
 </head>
 <body>
 	<iframe id="myframe" src="http://tukomi.github.io/jsTest/index.html"></iframe>
-
+	<button id="btn">submit</button>
 	<script type="text/javascript">
-
+		var btn = document.getElementById("btn");
 		var iframeWindow = document.getElementById("myframe").contentWindow;
-		iframeWindow.postMessage("a secret", "http://tukomi.github.io");
-
+		btn.addEventListener("click", function(){
+			iframeWindow.postMessage("a secret", "http://tukomi.github.io");
+		}, false);
 	</script>
 </body>
 </html>
