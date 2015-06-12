@@ -822,6 +822,29 @@ div.conpany-info time {
 	content: " —— ";
 }
 
+/*
+Firefox hack
+ */
+.project-1-info h4 span {
+	color: #008558;
+	font-size: 20px;
+}
+
+.project-2-info h4 span {
+	color: #f6c827;
+	font-size: 20px;
+}
+
+.project-3-info h4 span {
+	color: #f44;
+	font-size: 20px;
+}
+
+.project-4-info h4 span {
+	color: #2b5797;
+	font-size: 20px;
+}
+
 /*@Over Page
 Y roll
 ----------------------------------------------------------------------------------------------------------------*/
