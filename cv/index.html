@@ -2,73 +2,302 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>demo</title>
-	<script type="text/javascript" src="js/skrollr.stylesheets.js"></script>
-	<script type="text/javascript" src="js/skrollr.min.js"></script>
-	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="style/style.css" data-skrollr-stylesheet />
+	<title>Document</title>
+	<script type="text/javascript" src="javascripts/skrollr.min.js"></script>
+	<script type="text/javascript" src="javascripts/taketori.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheets/cvs.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/taketori.css">
 </head>
 <body>
-	<div id="header">
-		<div class="logo-cell">
-			<span class="logo skrollable rendered" data--10="top:10px" data-600="top:32px">
-				<img src="img/airscrew.png">
-			</span>
-		</div>
-		<div class="tringle-bar" data--10="top:-190px;" data-350="top:-150px;" style="top:-190px;">
-			<img src="img/tringle-top.png">
-		</div>
-		<div class="plane"  data-300="top: -10px; transform[bounce]:scale(0.4);" data-2000="top:1000px;transform[bounce]:scale(1.5);">
-			<img src="img/air-top.svg">
-			<span class="airscrew"></span>
-		</div>
-		<div class="tringle-back">
-			<img src="img/tringle-top.svg">
-		</div>
-		<div class="self-box" data-0="top: 0px; " data-400="top: -60px;">
-			<div class="self-cnt"  data-0="top: 300px; opacity: 1;"  data-400="top: 400px; opacity: 0.6;" data-1200="top: 420px; opacity: 0;">
-				<div class="cnt-bg"></div>
-				<div class="photo-box">
-					<img class="photo" src="img/logo-self.png">
+	<div id="clip">
+		<div id="intro-page"
+			data-0="top: 0;"
+			data-1000="top:0;"
+			data-1200="top: -20px;"
+			data-1300="top: -50px;"
+			data-1500="top: -200px;"
+			data-1700="top: -500px;"
+			data-1900="top: -900px;"
+			data-2100="top: -1400px;"
+			data-2300="top: -10000px;" >
+			<div class="logo-cell">
+				<span class="logo skrollable rendered"
+					data--10="top:10px;"
+					data-600="top:32px;" >
+					<img src="images/airscrew.png">
+				</span>
+			</div>
+			<div class="tringle-bar"
+				data--10="top:-190px;"
+				data-350="top:-150px;"
+				data-1000="top: -150px;"
+				data-1500="top: -200px;" >
+				<img src="images/tringle-top.png">
+			</div>
+			<div class="plane"
+				data-300="top: -10px; transform[bounce]:scale(0.4); opacity: 1; display: block;"
+				data-1000="top:1000px;transform[bounce]:scale(1.5); opacity: 1; display: block;"
+				data-1300="top:1000px;transform[bounce]:scale(1.5); opacity: 0; display: none;">
+				<img src="images/air-top.svg">
+				<span class="airscrew"></span>
+			</div>
+			<div class="tringle-back">
+				<img src="images/tringle-top.svg">
+			</div>
+			<div class="self-box"
+				data-0="top: 0px; "
+				data-400="top: -60px;">
+				<div class="self-cnt"
+					data-0="top: 300px; opacity: 1;"
+					data-400="top: 400px; opacity: 0.6;"
+					data-1200="top: 420px; opacity: 0;">
+					<div class="cnt-bg"></div>
+					<div class="photo-box">
+						<img src="images/logo-self.png" class="photo">
+					</div>
+					<div class="who-am-i">
+						<h2>云冬</h2>
+						<h3>正在起飞的前端工程师</h3>
+						<p>
+							<a href="mailto:yundong.me@gmail" class="strang email">yundong.me@gmail</a>
+						</p>
+					</div>
 				</div>
-				<div class="who-am-i">
-					<h2>云冬</h2>
-					<h3>正在起飞的前端工程师</h3>
-					<p>
-						<a href="mailto:mryund@gmail.com" class="strang email">EMAIL</a>
-					</p>
+				<div class="road-box">
+					<div class="road-line"
+						data-140="top: 0px;"
+						data-2000="top: -4000px;"></div>
+				</div>
+				<img src="images/tringle-large-top.png" class="bottom">
+			</div>
+			<div class="about-me"
+				data-300="top: -800px;"
+				data-1000="top: -50px;"
+				data-1100="top: -50px;"
+				data-1200="top: -70px;"
+				data-1300="top: -100px;"
+				data-1500="top: -200px;"
+				data-1700="top: -300px;"
+				data-1800="top: -400px;">
+				<ul>
+					<li><span>姓名&nbsp;|&nbsp;</span>云冬</li>
+					<li><span>手机&nbsp;|&nbsp;</span>18658758118</li>
+					<li><span>邮箱&nbsp;|&nbsp;</span><a href="mailto:yundong.me@gmail">yundong.me@gmail.com</a></li>
+					<li><span>博客&nbsp;|&nbsp;</span><a href="http://tukomi.me">欢迎猛击</a></li>
+					<li><span>教育背景&nbsp;|&nbsp;</span>温州大学•通信工程•2015毕业</li>
+				</ul>
+				<div class="introduction">
+					<p>对Web开发充满热情，希望从事前端开发。</p>
+					<p>有良好的编码习惯，掌握HTML、CSS编写页面技能，能使用原生JavaScript实现简单功能；掌握jQuery、Bootstrap等前端框架。</p>
+					<p>理解MVC架构。有过后端开发经验，能协助后端完成数据交换。掌握常用开发工具，可在Linux环境下开发。</p>
+				</div>
+				<div class="star star-top-left">
+					<img src="images/star.png">
+				</div>
+				<div class="star star-top-right">
+					<img src="images/star.png">
+				</div>
+				<div class="star star-bottom-left">
+					<img src="images/star.png">
+				</div>
+				<div class="star star-bottom-right">
+					<img src="images/star.png">
+				</div>
+				<img src="images/about-me-bottom.png" class="bottom">
+			</div>
+			<div class="clouds-bar">
+				<div class="cloud-1"
+					data-0="left: 150px;"
+					data-1500="left: 350px;"
+					data-3000="left: 150px" >
+					<img src="images/cloud-1.svg" height="171">
+				</div>
+				<div class="cloud-2"
+					data-0="right: 50px;"
+					data-1500="right: 350px;"
+					data-3000="right: 50px"
+					>
+					<img src="images/cloud-2.svg" height="171">
 				</div>
 			</div>
-			<div class="road-box">
-				<div class="road-line" data-140="top: 0px;" data-2000="top: -4000px;"></div>
-			</div>
-			<img class="bottom"  src="img/tringle-large-top.png">
 		</div>
-		<div class="about-me" data-0="top: -800px;" data-2000="top: -50px;">
-			<img src="img/about-me-bottom.png" alt="" class="bottom">
+		<div id="skills-page"
+			data-0="top:200px; left: 0px; opacity:1;"
+			data-1300="top:200px; left: 0px; opacity:1;"
+			data-1780="top: 0px; left: 0px; opacity:1;"
+			data-1900="top: 0px; left: 0px; opacity:1;"
+			data-3300="top: 0px; left: -3300px; opacity:1;"
+			data-3800="top: 0px; left: -3800px; opacity:0;"
+			data-4000="top: -500px; left: -3920px; opacity:0;"
+			data-4200="top: -10000px; left: -3920px; opacity:0;">
+			<div class="plane-2"
+				data-0="top: 50px; left: -200px; opacity:1;"
+				data-1780="top: 50px; left: -200px; opacity:1;"
+				data-2100="top: 300px; left: 500px; opacity:1;"
+				data-2700="top: 100px; left: 1900px; opacity:1;"
+				data-3000="top: -100px; left: 2800px; opacity:1;"
+				data-3300="top: -100px; left: 3500px; opacity:1;"
+				data-3800="top: 200px; left: 4200px; opacity:0;" >
+				<img src="images/air-2.svg">
+				<span class="airscrew-2"></span>
+			</div>
+			<div id="skills" >
+				<div class="skill-cloud-bar skill-1" >
+					<div class="skill-cloud-1"></div>
+					<div class="skill-info">
+						<strong>HTML/CSS</strong>
+						<ul class="detail-list fade">
+							<li>能够编写结构合理的页面布局；</li>
+							<li>能使用CSS3达到更加的页面效果；</li>
+							<li>了解HTML5新语义化标签和新特性；</li>
+							<li>能够使用Bootstrap、jQueryUI等前端开发框架；</li>
+							<li>熟悉Chrome开发工具辅助开发。</li>
+						</ul>
+					</div>
+					<div class="cover-cloud"></div>
+
+				</div>
+				<div class="skill-cloud-bar skill-2">
+					<div class="skill-cloud-2"></div>
+					<div class="skill-info">
+						<strong>JavaScript</strong>
+						<ul class="detail-list fade">
+							<li>掌握原生JavaScript,能使用其编写一般项目；</li>
+							<li>了解面对对象的程序设计；</li>
+							<li>能运用Ajax开发；</li>
+							<li>能运用jQurey框架辅助开发。</li>
+						</ul>
+					</div>
+					<div class="cover-cloud"></div>
+				</div>
+				<div class="skill-cloud-bar skill-3">
+					<div class="skill-cloud-3"></div>
+					<div class="skill-info">
+						<strong>ROR框架</strong>
+						<ul class="detail-list">
+							<li>了解Ruby on Rails框架，能编写简单需求；</li>
+							<li>理解MVC架构；</li>
+							<li>能配合后端进行数据交换。</li>
+						</ul>
+					</div>
+					<div class="cover-cloud"></div>
+					<div class="detail"></div>
+				</div>
+				<div class="skill-cloud-bar skill-4">
+					<div class="skill-cloud-4"></div>
+					<div class="skill-info">
+						<strong>开发工具</strong>
+						<ul class="detail-list">
+							<li>能使用Git等版本控制工具；</li>
+							<li>能在Linux环境下进行开发；</li>
+							<li>能使用Photoshop进行简单的图片处理，根据页面结构进行合理的图片分割；</li>
+						</ul>
+					</div>
+					<div class="cover-cloud"></div>
+					<div class="detail"></div>
+				</div>
+			</div>
+			<div id="projects" >
+				<div class="project-box">
+					<div class="projects-list">
+						<div class="project-exp project-1-info">
+							<span class="time-point"></span>
+							<div class="conpany-info">
+								<span class="job-info">Web开发工程师『实习』</span>
+								<h4 class="company-name" style="color: #008558;">上海捷道数码科技有限公司</h4>
+								<time>2015/03 - 2015-06</time>
+							</div>
+							<ul class="work-exp fade">
+								<p>负责公司基于Ruby On Rails框架的Web前后端开发，先后参与了公司内部日志管理系统开发和<a href="https://itunes.apple.com/cn/app/jian-kang-quan/id915227964?mt=8" style="color: #008558;">健康圈手机APP</a>的前后端开发。
+								</p>
+								<li>负责项目管理系统日志管理部分的开发；</li>
+								<li>负责健康圈后台内容管理功能开发，使用Ajax等技术实现异步审核内容，同步文章至博客等功能；</li>
+								<li>负责健康圈APP新页面、功能区开发；</li>
+								<li>参与其他项目开发。</li>
+							</ul>
+						</div>
+						<div class="project-exp project-2-info">
+							<span  class="time-point"></span>
+							<div class="conpany-info">
+								<span class="job-info">产品助理『实习』</span>
+								<h4 class="company-name" style="color: #f6c827;">上海数美网络科技有限公司</h4>
+								<time>2014/10 - 2015-01</time>
+							</div>
+							<ul class="work-exp fade">
+								<p>负责协助产品经理管理需求进度及产品测试。</p>
+								<li>负责需求管理和跟进需求进度；</li>
+								<li>对内提供后台工作流程优化建议；对外提供网站用户体验优化建议；</li>
+								<li>负责需求完整测试，提交测试结果，跟进BUG修复；</li>
+								<li>负责优化产品文案，编写新产品测试文档。</li>
+							</ul>
+						</div>
+						<div class="project-exp project-3-info">
+							<span  class="time-point"></span>
+							<div class="conpany-info">
+								<span class="job-info">新浪微博温州校园渠道大使</span>
+								<h4 class="company-name" style="color: #f44;">北京微梦创科网络技术有限公司</h4>
+								<time>2012/07 - 2014-01</time>
+							</div>
+							<ul class="work-exp fade">
+								<p>负责新浪微博在温州各高校的渠道推广工作。</p>
+								<li>组织筹办了包括校园迎新、植树节、圆梦中国等二十余次大型校园活动，使新浪微博深入学生生活；</li>
+								<li>策划组建了温州大学官方微博管理团队，建立温州地区高校微博矩阵；</li>
+								<li>运营温州大学80周年校庆官方微博，温州校园等多个微博营销账号；</li>
+							</ul>
+						</div>
+						<div class="project-exp project-4-info">
+							<span  class="time-point"></span>
+							<div class="conpany-info">
+								<span class="job-info">校内实践</span>
+								<h4 class="company-name" style="color: #2b579a;">校学生会实践外联部干事</h4>
+								<time>2011/09 - 2013-01</time>
+							</div>
+							<ul class="work-exp fade">
+								<li>与团队一起负责为学校主办的各大型活动寻找赞助；</li>
+								<li>策划并组织学生会成员参加各类社会实践；</li>
+								<li>负责编辑温州大学2012届新生宝典；</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div id="over-page"
+		 	data-0="top: 3000px; opacity:0;"
+		 	data-3200="top: 1100px; opacity:0;"
+		 	data-3300="top: 400px; opacity:0.3;"
+		 	data-3800="top: 200px; opacity:0.6;"
+		 	data-4300="top: 0px; opacity:1;" >
+			<div class="contact-info">
+				<h1>把我收到碗里来！</h1>
+				<h2>18658758118</h2>
+				<h2><a href="mailto:yundong.me@gmail.com">yundong.me@gmail.com</a></h2>
+				<h2><a href="javascript:void(0);">下载简历</a></h2>
+			</div>
 		</div>
 	</div>
 
+	<script type="text/javascript" src="javascripts/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="javascripts/skills.js"></script>
 	<script>
-	var scrollObj = skrollr.init({
-		  //跟smoothScrolling的功能，主要都是讓scroll事件不要這麼敏感，動畫才不會看起來卡卡的。
-		  smoothScrolling : true,
-		  smoothScrollingDuration:200,
+	(function(){
+		var scrollObj = skrollr.init({
+			  smoothScrolling: true,
+			  smoothScrollingDuration: 1000,
 
-	});
-	var $email = $('.email');
-	$email.on("mouseenter", function(){
-		$email.fadeOut("slow","swing",function(){
-			$email.text("mryund@gmail.com");
-			$email.fadeIn("slow","swing");
 		});
-	});
-	$email.on("mouseout", function(){
-		$email.fadeOut("slow","swing",function(){
-			$email.text("EMAIL");
-			$email.fadeIn("slow","swing");
-		});
-	});
+
+		var htmlSkill = new skill(".skill-1 .skill-info",  ".skill-cloud-1",  {height: "70px", time: 1500});
+		var jsSkill = new skill(".skill-2 .skill-info", ".skill-cloud-2",  {height: "60px", time: 1500});
+		var rorSkill = new skill(".skill-3 .skill-info",  ".skill-cloud-3",  {height: "40px", time: 1500});
+		var toolsSkill = new skill(".skill-4 .skill-info", ".skill-cloud-4",  {height: "60px", time: 1500});
+
+		//<![CDATA[
+		var taketori = (new Taketori()).set({fontFamily:'sans-serif'}).element('div.conpany-info').toVertical();
+		//]]>
+		}())
 	</script>
 </body>
 </html>
