@@ -59,33 +59,33 @@ Y roll
 @-webkit-keyframes vh {
 	0% {
 		-webkit-transform:rotate(0deg);
-		                transform:rotate(0deg);
+		transform:rotate(0deg);
 	}
 	100% {
 		-webkit-transform:rotate(360deg);
-		                transform:rotate(360deg);
+		transform:rotate(360deg);
 	}
 }
 @-moz-keyframes vh {
 	0% {
 		-moz-transform:rotate(0deg);
-		                transform:rotate(0deg);
+		transform:rotate(0deg);
 	}
 	100% {
 		-moz-transform:rotate(360deg);
-		                transform:rotate(360deg);
+		transform:rotate(360deg);
 	}
 }
 @keyframes vh {
 	0% {
 		-webkit-transform:rotate(0deg);
-		     -moz-transform:rotate(0deg);
-		                transform:rotate(0deg);
+		-moz-transform:rotate(0deg);
+		transform:rotate(0deg);
 	}
 	100% {
 		-webkit-transform:rotate(360deg);
-		     -moz-transform:rotate(360deg);
-		                transform:rotate(360deg);
+		-moz-transform:rotate(360deg);
+		transform:rotate(360deg);
 	}
 }
 .logo > img {
@@ -95,8 +95,8 @@ Y roll
 	left: 78px;
 	position: absolute;
 	-webkit-animation: vh 0.1s steps(6) infinite;
-	     -moz-animation: vh 0.1s steps(6) infinite;
-		animation: vh 0.1s steps(6) infinite;
+	-moz-animation: vh 0.1s steps(6) infinite;
+	animation: vh 0.1s steps(6) infinite;
 }
 
 .tringle-bar {
@@ -180,8 +180,8 @@ div.plane > span.airscrew {
    	 top: 125px;
 	background: url(../images/vint-horisontal.png) center top no-repeat;
 	-webkit-animation: rot1 0.1s steps(20) infinite;
-	     -moz-animation: rot1 0.1s steps(20) infinite;
-		animation: rot1 0.1s steps(20) infinite;
+	-moz-animation: rot1 0.1s steps(20) infinite;
+	animation: rot1 0.1s steps(20) infinite;
 }
 
 .self-box {
@@ -206,8 +206,8 @@ div.plane > span.airscrew {
 .road-box > .road-line{
 	background: url(../images/road-line.png) left top repeat-y;
 	width: 266px;
-    	height: 8000px;
-    	overflow: hidden;
+    height: 8000px;
+    overflow: hidden;
 	position: absolute;
 	top: 0;
 }
@@ -333,51 +333,51 @@ div.photo-box{
 	right: 500px;
 }
 
-@-webkit-keyframes fadeScale {
+@-webkit-keyframes starFadeScale {
 	0% {
-        		-webkit-transform: scale(0.8);
-        			transform: scale(0.8);
-       		 opacity: 0.8
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+       	opacity: 0.8
    	 }
-    	100% {
-       		 -webkit-transform: scale(1);
-       		 	transform: scale(1);
-        		opacity: 1
+    100% {
+       	-webkit-transform: scale(1);
+       	transform: scale(1);
+        opacity: 1
+    }
+}
+@-moz-keyframes starFadeScale {
+	0% {
+        -moz-transform: scale(0.8);
+       	transform: scale(0.8);
+       	opacity: 0.8
+   	 }
+    100% {
+       	-moz-transform: scale(1);
+       	transform: scale(1);
+        opacity: 1
     	}
 }
-@-moz-keyframes fadeScale {
-	0% {
-        		-moz-transform: scale(0.8);
-        		           transform: scale(0.8);
-       		 opacity: 0.8
-   	 }
-    	100% {
-       		 -moz-transform: scale(1);
-       		            transform: scale(1);
-        		opacity: 1
-    	}
-}
-@keyframes fadeScale {
-    	0% {
-        		-webkit-transform: scale(0.8);
-        		     -moz-transform: scale(0.8);
- 	               		transform: scale(0.8);
-	       	 opacity: 0.8
+@keyframes starFadeScale {
+    0% {
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+ 	    transform: scale(0.8);
+	    opacity: 0.8
   	}
- 	   100% {
-        		-webkit-transform: scale(1);
-        		     -moz-transform: scale(1);
- 	               		transform: scale(1);
-	       	 opacity: 1
+ 	100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+ 	    transform: scale(1);
+	    opacity: 1
 	}
 }
 
 .star > img {
 	height: 40px;
 	width: auto;
-	-webkit-animation: fadeScale 1s infinite alternate ease-in;
-	     -moz-animation: fadeScale 1s infinite alternate ease-in;
-    		animation: fadeScale 1s infinite alternate ease-in;
+	-webkit-animation: starFadeScale 1s infinite alternate ease-in;
+	-moz-animation: starFadeScale 1s infinite alternate ease-in;
+    animation: starFadeScale 1s infinite alternate ease-in;
 }
 
 .clouds-bar {
@@ -389,39 +389,39 @@ div.photo-box{
 @-webkit-keyframes fadeScale {
     0% {
        	-webkit-transform: scale(0.98);
-       	 	transform: scale(0.98);
+       	transform: scale(0.98);
        	opacity: 0.9
     }
     100% {
-        	-webkit-transform: scale(1);
-        		transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
        	opacity: 1
     }
 }
 @-moz-keyframes fadeScale {
     	0% {
        	 	-moz-transform: scale(0.98);
-       	 	           transform: scale(0.98);
+       	 	transform: scale(0.98);
        	 	opacity: 0.9
     	}
     	100% {
        	 	-moz-transform: scale(1);
-       	 	           transform: scale(1);
-        		opacity: 1
+       	 	transform: scale(1);
+        	opacity: 1
     	}
 }
 @keyframes fadeScale {
     	0% {
        		-webkit-transform: scale(0.98);
-       	 	     -moz-transform: scale(0.98);
-                		transform: scale(0.98);
+       	 	-moz-transform: scale(0.98);
+            transform: scale(0.98);
       		opacity: 0.9
     	}
     	100% {
        		-webkit-transform: scale(1);
-       	 	     -moz-transform: scale(1);
-                		transform: scale(1);
-        		opacity: 1
+       	 	-moz-transform: scale(1);
+            transform: scale(1);
+        	opacity: 1
     	}
 }
 .cloud-1 {
@@ -432,8 +432,8 @@ div.photo-box{
 
 .cloud-1 > img {
 	-webkit-animation: fadeScale 1s infinite alternate ease-in-out;
-	     -moz-animation: fadeScale 1s infinite alternate ease-in-out;
-    		animation: fadeScale 1s infinite alternate ease-in-out;
+	-moz-animation: fadeScale 1s infinite alternate ease-in-out;
+    animation: fadeScale 1s infinite alternate ease-in-out;
 }
 
 .cloud-2 {
@@ -441,10 +441,11 @@ div.photo-box{
 	top: 500px;
 	right: 50px;
 }
+
 .cloud-2 > img {
 	-webkit-animation: fadeScale 1s infinite alternate ease-in-out;
-	     -moz-animation: fadeScale 1s infinite alternate ease-in-out;
-    		animation: fadeScale 1s infinite alternate ease-in-out;
+	-moz-animation: fadeScale 1s infinite alternate ease-in-out;
+    animation: fadeScale 1s infinite alternate ease-in-out;
 }
 
 /*@Skills Page
@@ -494,7 +495,7 @@ div.plane-2 > img {
 		background-position: 0 center;
 	}
 	100%{
-        		background-position: -600px center;
+        background-position: -600px center;
 	}
 }
 @-moz-keyframes rot2 {
@@ -502,7 +503,7 @@ div.plane-2 > img {
 		background-position: 0 center;
 	}
 	100%{
-        		background-position: -600px center;
+        background-position: -600px center;
 	}
 }
 @keyframes rot2 {
@@ -510,7 +511,7 @@ div.plane-2 > img {
 		background-position: 0 center;
 	}
 	100%{
-        		background-position: -600px center;
+        background-position: -600px center;
 	}
 }
 div.plane-2 > span.airscrew-2 {
@@ -522,89 +523,89 @@ div.plane-2 > span.airscrew-2 {
 	right: -8px;
 	background: url(../images/vint-animate.png) 0 center no-repeat;
 	-webkit-animation:  rot2 0.1s steps(20) infinite;
-	     -moz-animation:  rot2 0.1s steps(20) infinite;
-	     	 animation:  rot2 0.1s steps(20) infinite;
+	-moz-animation:  rot2 0.1s steps(20) infinite;
+	animation:  rot2 0.1s steps(20) infinite;
 }
 
 @-webkit-keyframes swing {
 	0 {
 		-webkit-transform: rotateZ(0deg);
-			transform: rotateZ(0deg);
+		transform: rotateZ(0deg);
 	}
 	25% {
 		-webkit-transform: rotateZ(5deg);
-			transform: rotateZ(5deg);
+		transform: rotateZ(5deg);
 	}
 	50% {
 		-webkit-transform: rotateZ(0deg);
-			transform: rotateZ(0deg);
+		transform: rotateZ(0deg);
 	}
 	75% {
 		-webkit-transform: rotateZ(-5deg);
-			transform: rotateZ(-5deg);
+		transform: rotateZ(-5deg);
 	}
 	100% {
 		-webkit-transform: rotateZ(0deg);
-			transform: rotateZ(0deg);
+		transform: rotateZ(0deg);
 	}
 }
 @-moz-keyframes swing {
 	0 {
 		-moz-transform: rotateZ(0deg);
-		           transform: rotateZ(0deg);
+		transform: rotateZ(0deg);
 	}
 	25% {
 		-moz-transform: rotateZ(5deg);
-		           transform: rotateZ(5deg);
+		transform: rotateZ(5deg);
 	}
 	50% {
 		-moz-transform: rotateZ(0deg);
-		           transform: rotateZ(0deg);
+		transform: rotateZ(0deg);
 	}
 	75% {
 		-moz-transform: rotateZ(-5deg);
-		           transform: rotateZ(-5deg);
+		transform: rotateZ(-5deg);
 	}
 	100% {
 		-moz-transform: rotateZ(0deg);
-		           transform: rotateZ(0deg);
+		transform: rotateZ(0deg);
 	}
 }
 @keyframes swing {
 	0 {
 		-webkit-transform: rotateZ(0deg);
-		     -moz-transform: rotateZ(0deg);
-			transform: rotateZ(0deg);
+		-moz-transform: rotateZ(0deg);
+		transform: rotateZ(0deg);
 	}
 	25% {
 		-webkit-transform: rotateZ(5deg);
-		     -moz-transform: rotateZ(5deg);
-			transform: rotateZ(5deg);
+		-moz-transform: rotateZ(5deg);
+		transform: rotateZ(5deg);
 	}
 	50% {
 		-webkit-transform: rotateZ(0deg);
-		     -moz-transform: rotateZ(0deg);
-			transform: rotateZ(0deg);
+		-moz-transform: rotateZ(0deg);
+		transform: rotateZ(0deg);
 	}
 	75% {
 		-webkit-transform: rotateZ(-5deg);
-		     -moz-transform: rotateZ(-5deg);
-			transform: rotateZ(-5deg);
+		-moz-transform: rotateZ(-5deg);
+		transform: rotateZ(-5deg);
 	}
 	100% {
 		-webkit-transform: rotateZ(0deg);
-		     -moz-transform: rotateZ(0deg);
-			transform: rotateZ(0deg);
+		-moz-transform: rotateZ(0deg);
+		transform: rotateZ(0deg);
 	}
 }
 .skill-cloud-bar {
 	position: absolute;
 	-webkit-transform-origin: 74px 5px;
 	-webkit-animation: swing 3s infinite linear;
-	     -moz-transform-origin: 74px 5px;
-	     -moz-animation: swing 3s infinite linear;
-		transform-origin: 74px 5px;
-		animation: swing 3s infinite linear;
+	-moz-transform-origin: 74px 5px;
+	-moz-animation: swing 3s infinite linear;
+	transform-origin: 74px 5px;
+	animation: swing 3s infinite linear;
 }
 
 div.skill-info{
@@ -664,8 +665,8 @@ div.skill-info > strong {
 }
 .fade {
 	-webkit-animation: fadeIn 0.8s;
-	     -moz-animation: fadeIn 0.8s;
-		animation: fadeIn 0.8s;
+	-moz-animation: fadeIn 0.8s;
+	animation: fadeIn 0.8s;
 }
 
 .skill-info:hover ul.detail-list, .project-1-info:hover ul.work-exp, .project-2-info:hover ul.work-exp, .project-3-info:hover ul.work-exp, .project-4-info:hover ul.work-exp {
@@ -879,12 +880,12 @@ Y roll
 	margin-bottom: 10px;
 	color: #006e9b;
 	-webkit-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .contact-info a:hover {
 	text-decoration: none;
 	color: #CA6502;
 	-webkit-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
