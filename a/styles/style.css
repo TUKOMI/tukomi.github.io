@@ -38,6 +38,9 @@ section.item {
 div.container {	
 	border-radius: 5px;
 	background-color: #fff;
+	-webkit-box-shadow: 0px 10px 20px #ccc;
+	-moz-box-shadow: 0px 10px 20px #ccc;
+	box-shadow: 0px 10px 20px #ccc;
 }
 
 .bmi-rainbow > span{
@@ -114,9 +117,8 @@ div.container {
 	color: #65c6f2;
 }
 
-.pyramid {     
-	width: 100%;
-    max-width: 308px;
+.pyramid {         
+	width: 260px;
     height: 207px;   
 	background: url(../images/img_dietstructure_pyramid.png) 0 0 no-repeat;
     background-size: 100%;
@@ -126,36 +128,37 @@ div.container {
 
 .pyramid > p {
 	color: #fff;
+    font-size: 12px;
 	position: absolute;
 }
 
 .pyramid > p:nth-child(1){
-    top: 9px;
-    left: 195px;	
+    top: 8px;
+    left: 164px;
 }
 .pyramid > p:nth-child(2){
-    top: 51px;
-    left: 35px;
+    top: 43px;
+    left: 30px;
 }
 
 .pyramid > p:nth-child(3){
-	top: 52px;
-    left: 207px;
+	top: 44px;
+    left: 174px;
 }
 
 .pyramid > p:nth-child(4){
-    top: 96px;
+    top: 81px;
     left: 3px;
 }
 
 .pyramid > p:nth-child(5){
-    top: 98px;
-    left: 235px;
+    top: 83px;
+    left: 199px;
 }
 
 .pyramid > p:nth-child(6){
-    top: 188px;
-    left: 50px;
+    top: 159px;
+    left: 42px;
 }
 
 div.diet-box {
