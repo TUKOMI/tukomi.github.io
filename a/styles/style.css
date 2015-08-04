@@ -200,8 +200,11 @@ div.add-food, div.add-food p {
 	color: #f93f6b;
 }
 
-.sports-plan > img , img.certificate {
+.sports-plan > img {
 	width: 100%;
+    max-width: 315px;
+    display: block;
+    margin: 0 auto;
 }
 
 .consultant img.myphoto {
@@ -236,4 +239,8 @@ a.btn:hover {
 .img-box {
 	margin: 16px auto;
     max-width: 260px;
+}
+
+.img-box > img {
+	width: 100%;
 }
