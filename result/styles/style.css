@@ -119,7 +119,7 @@ div.container {
 
 .pyramid {         
 	width: 260px;
-    height: 207px;   
+    height: 180px;   
 	background: url(../images/img_dietstructure_pyramid.png) 0 0 no-repeat;
     background-size: 100%;
     margin: 0 auto;
@@ -212,9 +212,12 @@ div.add-food, div.add-food p {
 
 .consultant img.myphoto {
 	width: 74px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 .consultant h2.myname {
