@@ -242,18 +242,17 @@ div.add-food, div.add-food p {
 }
 
 .plan-img-box img {
-	width: 100%;
+  width: 100%;
+  border-radius: 5px;
 }
 
-.consultant img.myphoto {
+/*.consultant img.myphoto {
 	width: 74px;
   height: 74px;
   display: block;
   margin: 0 auto;
   border-radius: 50%;
-  object-fit: cover;
-  object-position: 50% 50%;
-}
+}*/
 
 .consultant h2.myname {
 	text-align: center;
@@ -270,7 +269,7 @@ a.btn {
 	text-decoration: none;
 	border-radius: 5px;    
 	margin: 0 4%;
-    display: block;
+  display: block;
 }
 
 a.btn:hover {
@@ -284,4 +283,10 @@ a.btn:hover {
 
 .img-box > img {
 	width: 100%;
+}
+.photo {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    margin: 0 auto;
 }
