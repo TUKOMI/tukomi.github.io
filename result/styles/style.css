@@ -206,6 +206,7 @@ div.add-food, div.add-food p {
 .plan-img-box {
   width: 100%;
   max-width: 315px;
+  min-height: 110px;
   margin: 0 auto;
   position: relative;
 }
