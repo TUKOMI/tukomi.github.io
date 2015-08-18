@@ -62,9 +62,9 @@ div.container {
 	margin-top: 72px;
 }
 
-.bmi-rainbow > span:last-child {
+span.bmi-range {
 	font-size: 17px;
-	color: #353535;
+	color: #333;
 }
 
 .bmi-vlu {
