@@ -50,6 +50,7 @@ h1.item-name, h2.item-level {
 .item-introduction {
   color: #999;
   font-size: 14px;
+  line-height: 1.5em;
   margin: 0 0 20px 0;
 }
 
